@@ -1,26 +1,15 @@
-@bgc: #006699;
+@import 'base.less';
 
-#header {
-    height: 50px;
-    background-color: @bgc;
-    margin: 0;
 
-    h1 {
-        line-height: 50px;
-        font-weight: normal;
-        color: #fff;
-        font-size: 16px;
-        text-align: center;
-    }
-    .fa-search {
-        color: #fff;
-        line-height: 50px;
-        position: absolute;
-        right: 15px;
-        top: 5px;
-
-    }
+html,body {
+    background-color: #fff;
 }
+
+main {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}   
+
 // 图片轮播
 .banner {
     // 小圆点
@@ -36,3 +25,108 @@
         }
     }
 }
+
+// 分类部分
+.classify {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    .mui-content {
+        .mui-row {  
+            >.mui-col-xs-4 {
+                 a {
+                    display:block;
+                    img {
+                        width: 100%;
+                        // 去掉图片底部3px
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.banner2 {
+    padding: 0 10px;
+    .mui-content {
+        >.mui-row {
+            width: 100%;
+            .mui-col-xs-8 {
+                >.mui-row{
+                    width: 100%;
+                    .mui-col-xs-6 {   
+                        a {
+                            display: block;
+                            width: 100%;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .mui-col-xs-4 {
+                border: red;
+                a {
+                    display: block;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+// 品牌专区
+.brand {
+    img {
+        width: 100%;
+    }
+    .mui-row {
+        width: 100%;
+        li {
+            a {
+                display: block;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}
+
+// 运动男士女士专区
+.sport,.women,.man{
+    img {
+        width: 100%;
+        vertical-align: middle;
+    }
+    .mui-row {
+        width: 100%;
+        padding: 0 10px;
+        li {
+            padding: 5px;
+            a {
+                box-shadow: 0 0 3px #666;
+                display: block;
+                text-align: center;
+                padding-bottom: 10px;
+                img {
+                    width: 100%;
+                }
+                p {
+                    .red {
+                        color: red;
+                    }
+                    .gray {
+                        color:gray;
+                    }
+                    margin-bottom: 0;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+}
+
